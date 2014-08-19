@@ -48,3 +48,8 @@
       |%p               |  void               |  void**               | 
       |%n               |  int*               |  int*                 |
       |%%               |  none               |  none                 |
+
+## 1068 Parencodings
+
+* 算法：栈模拟。栈里保存所有未匹配的左括号index，当遇到一个右括号时，(右括号index - 栈顶左括号index + 1) / 2就是所要的w seq相应的值。
+* 难点：注意输入的括号不一定是合法的，最后一个w seq值不能直接用p seq最后一个值。
