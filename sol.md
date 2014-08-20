@@ -49,6 +49,11 @@
       |%n               |  int*               |  int*                 |
       |%%               |  none               |  none                 |
 
+## 1051 P,MTHBGWB (PROBLEM_B)
+
+* 算法：两个map, 字母到Morse和Morse到字母
+* 难点：C语言没有map，用数组模拟。指针操作。。。
+
 ## 1068 Parencodings
 
 * 算法：栈模拟。栈里保存所有未匹配的左括号index，当遇到一个右括号时，(右括号index - 栈顶左括号index + 1) / 2就是所要的w seq相应的值。
