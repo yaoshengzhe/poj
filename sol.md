@@ -58,3 +58,13 @@
 
 * 算法：栈模拟。栈里保存所有未匹配的左括号index，当遇到一个右括号时，(右括号index - 栈顶左括号index + 1) / 2就是所要的w seq相应的值。
 * 难点：注意输入的括号不一定是合法的，最后一个w seq值不能直接用p seq最后一个值。
+
+## 1095 Trees Made to Order
+
+* 算法：
+
+    - 先算出n个节点的二叉树一共有多少组合(catalan数)，公式N(i) = \sum N(j) * N(i - j - 1)。想象一下所有节点一字排开，选i作为根节点，那么此时一共有二叉树N(i-1) * N(n - i)个。注意N(0) = 1，否则乘法会导致后面很多数为0。
+    - 计算以上数组的accumulative，即acc(i) = \sum N(j) (0 <= j <= i)
+    - 递归函数print_tree(n, k)，该函数打印节点数为n的二叉树的第k个状态(k >= 1)
+
+* 难点：递归调用时要计算左节点有几个以及左子树的状态，比较恶心，看代码 => [Trees Made to Order代码](1095_Trees_Made_to_Order/Solution.c)
