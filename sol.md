@@ -59,6 +59,11 @@
 * 算法：栈模拟。栈里保存所有未匹配的左括号index，当遇到一个右括号时，(右括号index - 栈顶左括号index + 1) / 2就是所要的w seq相应的值。
 * 难点：注意输入的括号不一定是合法的，最后一个w seq值不能直接用p seq最后一个值。
 
+## 1080 Human Gene Functions
+
+* 算法：edit distance变种，推导公式都一样。
+* 难点：注意下标计算，s(i)(j)表示的是字符串a[0..i-1]和b[0..j-1]的距离。
+
 ## 1095 Trees Made to Order
 
 * 算法：
