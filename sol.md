@@ -49,6 +49,11 @@
       |%n               |  int*               |  int*                 |
       |%%               |  none               |  none                 |
 
+## [1050 To the Max](1050_To_the_Max/Solution.c)
+
+* 算法：一维最长子数组和的二维版本。对于二维数组(matrix)，枚举两行的所有可能(行号i <= j)。然后将这两行row中间的所有row按column相加，这就构成了一个一维数组，然后找最大子数组和。复杂度O(n^3)
+* 难点：计算两个row之间的column和。这个可以令matrix(i, j)保存\sum matrix(k, j) (0 <= k <= i)，并且第一行row数字为0
+
 ## 1051 P,MTHBGWB (PROBLEM_B)
 
 * 算法：两个map, 字母到Morse和Morse到字母
