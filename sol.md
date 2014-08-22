@@ -59,6 +59,14 @@
 * 算法：两个map, 字母到Morse和Morse到字母
 * 难点：C语言没有map，用数组模拟。指针操作。。。
 
+## [1057 FILE MAPPING](1057_FILE_MAPPING/Solution.c)
+
+* 算法：递归。当遇到dir时，递归打印。当遇到file时，保存到一个数组中。当全部扫描完毕时，对之前的file数组排序打印。
+* 难点：
+
+    - 确定递归函数形式。int print_data_set(dataset, offset, len, indent)，该函数返回下一个要处理的数据在dataset里的offset
+    - 了解qsort
+
 ## [1068 Parencodings](1068_Parencodings/Solution.c)
 
 * 算法：栈模拟。栈里保存所有未匹配的左括号index，当遇到一个右括号时，(右括号index - 栈顶左括号index + 1) / 2就是所要的w seq相应的值。
