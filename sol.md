@@ -69,6 +69,11 @@
 * 算法：两个map, 字母到Morse和Morse到字母
 * 难点：C语言没有map，用数组模拟。指针操作。。。
 
+## [1056 IMMEDIATE DECODABILITY](1056_IMMEDIATE_DECODABILITY/Solution.c)
+
+* 算法：暴力或者用trie。这题的trie可以用二叉树实现，left表示0, right表示1。对于一个字符串的每个字符，将其插入到trie中；在插入过程中，如果发现某节点是leaf的情况，则表示该字符串和之前已插入trie的另外一个字符串有公共前缀，此时退出，输出不可直接decode
+* 难点：用trie的话，难点在实现trie以及如何在插入过程中退出(如果插入点是某个已存在的leaf)
+
 ## [1057 FILE MAPPING](1057_FILE_MAPPING/Solution.c)
 
 * 算法：递归。当遇到dir时，递归打印。当遇到file时，保存到一个数组中。当全部扫描完毕时，对之前的file数组排序打印。
