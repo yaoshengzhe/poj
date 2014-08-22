@@ -3,6 +3,11 @@
 * 算法：直接相加
 * 难点：无
 
+## [1003 Hangover](1003_Hangover/Solution.c)
+
+* 算法：一个一个数
+* 难点：无
+
 ## [1045 Bode Plot](1045_Bode_Plot/Solution.c)
 
 * 算法：解方程。。。
