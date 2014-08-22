@@ -1,9 +1,9 @@
-## 1000 A+B Problem
+## [1000 A+B Problem](1000_A+B_Problem/Solution.c)
 
 * 算法：直接相加
 * 难点：无
 
-## 1045 Bode Plot
+## [1045 Bode Plot](1045_Bode_Plot/Solution.c)
 
 * 算法：解方程。。。
 
@@ -54,22 +54,22 @@
 * 算法：一维最长子数组和的二维版本。对于二维数组(matrix)，枚举两行的所有可能(行号i <= j)。然后将这两行row中间的所有row按column相加，这就构成了一个一维数组，然后找最大子数组和。复杂度O(n^3)
 * 难点：计算两个row之间的column和。这个可以令matrix(i, j)保存\sum matrix(k, j) (0 <= k <= i)，并且第一行row数字为0
 
-## 1051 P,MTHBGWB (PROBLEM_B)
+## [1051 P,MTHBGWB (PROBLEM_B)](1051_P,MTHBGWB/Solution.c)
 
 * 算法：两个map, 字母到Morse和Morse到字母
 * 难点：C语言没有map，用数组模拟。指针操作。。。
 
-## 1068 Parencodings
+## [1068 Parencodings](1068_Parencodings/Solution.c)
 
 * 算法：栈模拟。栈里保存所有未匹配的左括号index，当遇到一个右括号时，(右括号index - 栈顶左括号index + 1) / 2就是所要的w seq相应的值。
 * 难点：注意输入的括号不一定是合法的，最后一个w seq值不能直接用p seq最后一个值。
 
-## 1080 Human Gene Functions
+## [1080 Human Gene Functions](1080_Human_Gene_Functions/Solution.c)
 
 * 算法：edit distance变种，推导公式都一样。
 * 难点：注意下标计算，s(i)(j)表示的是字符串a[0..i-1]和b[0..j-1]的距离。
 
-## 1095 Trees Made to Order
+## [1095 Trees Made to Order](1095_Trees_Made_to_Order/Solution.c)
 
 * 算法：
 
@@ -77,4 +77,4 @@
     - 计算以上数组的accumulative，即acc(i) = \sum N(j) (0 <= j <= i)
     - 递归函数print_tree(n, k)，该函数打印节点数为n的二叉树的第k个状态(k >= 1)
 
-* 难点：递归调用时要计算左节点有几个以及左子树的状态，比较恶心，看代码 => [Trees Made to Order代码](1095_Trees_Made_to_Order/Solution.c)
+* 难点：递归调用时要计算左节点有几个以及左子树的状态，比较恶心，看代码。
