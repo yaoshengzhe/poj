@@ -54,6 +54,11 @@
       |%n               |  int*               |  int*                 |
       |%%               |  none               |  none                 |
 
+## [1046 Color Me Less](1046_Color_Me_Less/Solution.c)
+
+* 算法：一个一个算
+* 难点：无
+
 ## [1050 To the Max](1050_To_the_Max/Solution.c)
 
 * 算法：一维最长子数组和的二维版本。对于二维数组(matrix)，枚举两行的所有可能(行号i <= j)。然后将这两行row中间的所有row按column相加，这就构成了一个一维数组，然后找最大子数组和。复杂度O(n^3)
