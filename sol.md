@@ -16,6 +16,12 @@
 * 算法：一个一个数
 * 难点：无
 
+## [1005 I Think I Need a Houseboat](1005_I_Think_I_Need_a_Houseboat/Solution.c)
+
+* 算法：pi * r^2 / 2 <= year * 50 => year = floor(pi * r^2 / 100 + 1)
+* 难点：pi精度要够3.1415926535897
+
+
 ## [1045 Bode Plot](1045_Bode_Plot/Solution.c)
 
 * 算法：解方程。。。
