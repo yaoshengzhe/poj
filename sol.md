@@ -21,6 +21,13 @@
 * 算法：pi * r^2 / 2 <= year * 50 => year = floor(pi * r^2 / 100 + 1)
 * 难点：pi精度要够3.1415926535897
 
+## [1007 DNA Sorting](1007_DNA_Sorting/Solution.c)
+
+* 算法：算逆序数，然后排序输出。
+* 难点：
+
+    - O(n^2)求逆序数会超时，要用mergesort来做 => O(nlogn)
+    - 本题数据有特殊性，可以做到O(n)求逆序数。用counting sort的思想，对dna从后往前扫；用一个大小为4的数组保存ACGT到当前位置出现的数量，然后可以轻易求出逆序。
 
 ## [1045 Bode Plot](1045_Bode_Plot/Solution.c)
 
